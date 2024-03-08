@@ -26,11 +26,11 @@ try:
 except Exception as e:
     print(f"ERROR\n{str(e)}")
 
-async def BotzHub():
+async def botstatsk():
     async with user_bot:
         while True:
             print("[INFO] starting to check uptime..")
-            await user_bot.edit_message(int(chnl_id), msg_id, "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`")
+            await user_bot.edit_message(int(chnl_id), msg_id, "**@botstatsk Bots Stats.**\n\n`Performing a periodic check...`")
             c = 0
             edit_text = "**botstatsk Bots Stats.**\n\n"
             for bot in bots:
