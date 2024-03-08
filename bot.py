@@ -32,7 +32,7 @@ async def BotzHub():
             print("[INFO] starting to check uptime..")
             await user_bot.edit_message(int(chnl_id), msg_id, "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`")
             c = 0
-            edit_text = "**@BotzHub Bots Stats.**\n\n"
+            edit_text = "**botstatsk Bots Stats.**\n\n"
             for bot in bots:
                 print(f"[INFO] checking @{bot}")
                 snt = await user_bot.send_message(bot, "/start")
@@ -68,4 +68,4 @@ async def BotzHub():
             print("Sleeping for 2 hours.")
             await asyncio.sleep(2 * 60 * 60)
 
-user_bot.loop.run_until_complete(BotzHub())
+user_bot.loop.run_until_complete(botstatsk())
